@@ -22,20 +22,8 @@ def is_valid_ip(ip):
 
 # Bot information
 API_ID = environ.get('API_ID', '6674102')
-if len(API_ID) == 0:
-    logger.error('API_ID is missing, exiting now')
-    exit()
-else:
-    API_ID = int(API_ID)
 API_HASH = environ.get('API_HASH', '1ca8fedb9d767db9f162054fc42bc4b4')
-if len(API_HASH) == 0:
-    logger.error('API_HASH is missing, exiting now')
-    exit()
 BOT_TOKEN = environ.get('BOT_TOKEN', '7647981293:AAEJfc81eJtHSlvSVGEmTg9ocpu6kygDNl8')
-if len(BOT_TOKEN) == 0:
-    logger.error('BOT_TOKEN is missing, exiting now')
-    exit()
-BOT_ID = BOT_TOKEN.split(":")[0]
 PORT = int(environ.get('PORT', '8080'))
 
 # Upload your images to "postimages.org" and get direct link
